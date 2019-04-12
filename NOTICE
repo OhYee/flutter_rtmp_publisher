@@ -1,0 +1,6 @@
+flutter RTMP publisher
+Copyright 2019 OhYee(https://github.com/OhYee).
+
+This product includes library pedroSG94/rtmp-rtsp-stream-client-java (https://github.com/pedroSG94/rtmp-rtsp-stream-client-java) developed by pedroSG94 (https://github.com/pedroSG94).
+
+The RTMP part was modified from faucamp/SimpleRtmp(https://github.com/faucamp/SimpleRtmp) developed by faucamp (https://github.com/faucamp).
