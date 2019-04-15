@@ -1,13 +1,3 @@
-import 'dart:async';
+export 'RTMPCamera.dart';
+export 'RTMPCameraPreview.dart';
 
-import 'package:flutter/services.dart';
-
-class FlutterRtmpPublisher {
-  static const MethodChannel _channel =
-      const MethodChannel('flutter_rtmp_publisher');
-
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
-  }
-}
