@@ -5,3 +5,8 @@
 .pub/
 
 build/
+
+.gradle
+.settings
+.project
+.vscode

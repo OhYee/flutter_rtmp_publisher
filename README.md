@@ -2,7 +2,7 @@
 
 flutter plugin to publish rtmp data.
 
-Developing at branch `dev`, **the plugin can not use now!**
+**Only work on Android**, developing at branch `dev`, **the plugin can not use now!**
 
 ## Getting Started
 

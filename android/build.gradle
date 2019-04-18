@@ -16,10 +16,12 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'https://jitpack.io' }
     }
 }
 
 apply plugin: 'com.android.library'
+apply plugin: 'eclipse'
 
 android {
     compileSdkVersion 28
@@ -30,5 +32,8 @@ android {
     }
     lintOptions {
         disable 'InvalidPackage'
+    }
+    dependencies {
+        compile 'com.github.pedroSG94.rtmp-rtsp-stream-client-java:rtplibrary:1.5.8'
     }
 }

@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_rtmp_publisher_example">
+    package="com.example.flutter_rtmp_publisher_example"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -9,7 +10,8 @@
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:label="flutter_rtmp_publisher_example"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        tools:replace="android:label">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
