@@ -14,7 +14,7 @@ flutter RTMP 推流插件
 dependencies:
   flutter_rtmp_publisher:
     git:
-      url: git://github.com:OhYee/flutter_rtmp_publisher.git
+      url: git://github.com/OhYee/flutter_rtmp_publisher.git
 ```
 
 ## 致谢
