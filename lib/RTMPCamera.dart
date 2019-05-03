@@ -28,11 +28,11 @@ class RTMPCamera {
   }
 
   Future<Null> unsetView() async {
-    return await _methodChannel.invokeMethod("unsetView");
+    await _methodChannel.invokeMethod("unsetView");
   }
 
   Future<Null> dispose() async {
-    return await _methodChannel.invokeMethod("dispose");
+    await _methodChannel.invokeMethod("dispose");
   }
 
   Future<int> getId() async {

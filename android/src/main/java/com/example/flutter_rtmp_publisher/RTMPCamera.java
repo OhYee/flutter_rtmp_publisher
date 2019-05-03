@@ -69,14 +69,18 @@ public class RTMPCamera implements MethodCallHandler, ConnectCheckerRtmp {
 
     // RTMPCameraPreview destroyed
     public void unsetView(Object args) {
-        this.dispose();
+        this.dispose(args);
     }
 
     // Destroy RTMPCamera
-    void dispose() {
+    public void dispose(Object args) {
         if (this.camera != null) {
-            this.camera.stopStream();
-            this.camera.stopPreview();
+            if (this.camera.isStreaming()) {
+                this.camera.stopStream();
+            }
+            if (this.camera.isOnPreview()) {
+                this.camera.stopPreview();
+            }
             this.camera = null;
         }
     }
